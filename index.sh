@@ -1,0 +1,38 @@
+agave-validator \
+  --ledger ./validator-ledger \
+  --accounts ./solana/accounts \
+  --identity ./validator-keypair.json \
+  --geyser-plugin-config ./geyser-config.json \
+  --known-validator 5D1fNXzvv5NjV1ysLjirC4WY92RNsVH18vjmcszZd8on \
+  --known-validator dDzy5SR3AXdYWVqbDEkVFdvSPCtS9ihF5kJkHCtXoFs \
+  --known-validator eoKpUABi59aT4rR9HGS3LcMecfut9x7zJyodWWP43YQ \
+  --known-validator 7XSY3MrYnK8vq693Rju17bbPkCN3Z7KvvfvJx4kdrsSY \
+  --known-validator Ft5fbkqNa76vnsjYNwjDZUXoTWpP7VYm3mtsaQckQADN \
+  --known-validator 9QxCLckBiJc783jnMvXZubK4wH86Eqqvashtrwvcsgkv \
+  --known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
+  --known-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
+  --known-validator DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ \
+  --known-validator CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S \
+  --entrypoint entrypoint.mainnet-beta.solana.com:8001 \
+  --entrypoint entrypoint2.mainnet-beta.solana.com:8001 \
+  --entrypoint entrypoint3.mainnet-beta.solana.com:8001 \
+  --entrypoint entrypoint4.mainnet-beta.solana.com:8001 \
+  --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
+  --entrypoint 34.83.231.102:8001 \
+  --entrypoint 35.203.162.138:8001 \
+  --entrypoint 35.203.150.192:8001 \
+  --entrypoint 34.82.236.144:8001 \
+  --entrypoint 34.72.203.65:8001 \
+  --entrypoint 34.83.37.145:8001 \
+  --entrypoint 34.82.174.69:8001 \
+  --entrypoint 34.83.70.206:8001 \
+  --entrypoint 34.82.64.236:8001 \
+  --only-known-rpc \
+  --full-rpc-api \
+  --no-voting \
+  --rpc-port 8899 \
+  --rpc-bind-address 0.0.0.0 \
+  --private-rpc \
+  --dynamic-port-range 8000-8020 \
+  --limit-ledger-size \
+  > validator.log 2>&1
